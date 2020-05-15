@@ -25,7 +25,7 @@ export class ProductService {
     );   
 
   }
-
+  //filtro desfripcion
   getProductListDescription(description: String) : Observable<any>{
     console.log("Llamando a REST:"+ this.urlBase+"/productos/"+description);
     return this.http.get(this.urlBase+"/productos/"+description).pipe(
